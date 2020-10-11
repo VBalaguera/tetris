@@ -1,0 +1,1030 @@
+/*
+
+
+
+*/
+
+
+/*fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+
+/*colors: */
+
+body {
+    --bg-main: #e5e5e5; 
+    --text-color: #0e1111;
+    --second-color: #e5e5e5; 
+    --second-text: #0e1111;
+}
+
+
+
+
+
+
+*,*:before,*:after {box-sizing:inherit;margin:0; padding:0; border:0 none; position: relative;}
+html {
+	background: var(--bg-main); 
+	box-sizing:border-box;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+	color: var(--text-color); 
+}
+
+@media screen and (min-width: 601px) {
+    body > article {
+        display: flex; 
+        flex-wrap: wrap; 
+    }
+    figure {
+        background-color: var(--text-color); 
+        width: calc( 50% + 1px); /*so, it displays the sections/figures one by one, if it were 50%, it would display both at the same time*/
+        height: 100vh; /*100% does not work here */
+        margin: 0 auto 10vh 0; 
+        position: sticky;
+        top: 0;
+        overflow: hidden; 
+/*         box-shadow: -4px -4px 8px rgba(0,0,0,.6); */
+    }
+/*     figure::after {
+        content: '';
+        position: absolute; 
+        top: 5vmin;
+        right: 5vmin;
+        bottom: 5vmin;
+        left: 45%;
+        border: 1px dotted #fff; 
+        outline: 1px solid #fff; 
+        outline-offset: -3vmin;
+        backdrop-filter: grayscale(1);
+        pointer-events: none; 
+    }
+    figure:nth-of-type(2n)::after {
+        right: 45%; 
+        left: 5vmin; 
+    } */
+    section {
+        background-color: var(--bg-main); 
+        width: calc(50% + 1px);
+        height: 100vh;
+        margin: 0 0 0 auto; 
+        position: sticky; 
+        top: 0;
+        overflow: hidden;
+        padding: 3vmin;
+/*         box-shadow: -4px -4px 8px rbga(0,0,0,.7); */
+    }
+    figure:nth-of-type(1),
+    section:nth-of-type(1) {
+        margin: 0 0 0 0;
+        width: 50%;
+    }
+    figure:nth-of-type(2n) {
+        margin: 0 0 0 auto;
+/*         box-shadow: -4px -4px 8px rgba(0,0,0,.6);  */
+    }
+    figure:last-of-type,
+    section:last-of-type {
+        margin-bottom: none;
+    }
+/*     section::before {
+        background: inherit;
+        z-index: 1;
+        content: "";
+        position: absolute; 
+        top: 50%; 
+        left: 0;
+        width: 7vmin;
+        height: 7vmin;
+        transform: translate(calc(-50% + 1), -50%) rotate(-45deg);
+        clip-path: polygon(-15% -15%, 110% 0%, 0% 110%);
+        box-shadow: -4px -2px 8px rgba(0,0,0,.6);
+        border-radius: 1.5vmin 0 0 0;
+    }  */
+/*     section:nth-of-type(2n)::before {
+        left: auto;
+        right: 0;
+        transform:translate(calc(50% - 1px), -50%) rotate(-45deg)
+        scale(-1); 
+    } */
+/*     section::after { ORIGINAL
+        content: "";
+        position: absolute;
+        top: 5vmin;
+        right: 45%; 
+        bottom: 5vmin;
+		left: 5vmin;
+		border: 2px dashed #fff;
+		outline: 1px solid #fff;
+		outline-offset: -5vmin;
+		backdrop-filter: invert(1);
+		pointer-events: none;
+	}  */
+    .section1 h1::after {
+        content: url("/media/L_1.svg");
+        position: absolute;
+        height: 4.5rem; 
+        width: 6rem;
+        fill: black; 
+
+        right: 39%; 
+        bottom: -7vmin;
+    }
+    .section2 h1::after {
+        content: url("/media/S.svg");
+        position: absolute;
+        height: 4.5rem; 
+        width: 6rem;
+        stroke: black; 
+
+        right: 39%; 
+        bottom: -7vmin;
+    }
+    .section3 h1::after {
+        content: url("/media/o.svg");
+        position: absolute;
+        height: 4rem;
+        width: 4rem;
+        stroke: black; 
+
+        right: 40%; 
+        bottom: -5vmin;
+    }
+    .section4 h1::after {
+        content: url("/media/I.svg");
+        position: absolute;
+        height: 4.5rem; 
+        width: 9rem;
+        stroke: black; 
+
+        right: 32%; 
+        bottom: -4vmin;
+    }
+    .section5 h1::after {
+        content: url("/media/Z.svg");
+        position: absolute;
+        height: 4.5rem; 
+        width: 6rem;
+        stroke: black; 
+
+        right: 39%; 
+        bottom: -7vmin;
+    }
+    .section6 h1::after {
+        content: url("/media/J.svg");
+        position: absolute;
+        height: 4.5rem; 
+        width: 6rem;
+        stroke: black; 
+
+        right: 39%; 
+        bottom: -7vmin;
+    }
+    .section7 h1::after {
+        content: url("/media/T.svg");
+        position: absolute;
+        height: 4.5rem; 
+        width: 6rem;
+        stroke: black; 
+
+        right: 39%; 
+        bottom: -7vmin;
+    }
+    
+
+    figcaption {
+        position: sticky; 
+        bottom: 0;
+        left: 0;  
+         
+        padding: 1rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        font-style: italic; 
+        font-size: calc(.5vmin + .7vmax);
+        color: white; 
+        text-align: center; 
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+        figcaption a {
+        color: white; 
+        font-weight: bold;
+        font-style: italic; 
+
+    }
+
+
+/* 	section:nth-of-type(2n):after {
+		right: 5vmin;
+		left: 45%;
+    } */
+    figure img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: contain; 
+        object-position: center;
+    }
+
+    .figure1 {
+        background: black url("/media/tetris first build.png") center no-repeat;
+        background-size: contain; 
+    }
+    .figure2 {
+        background: black url("/media/tetris nes cover.jpg") center no-repeat;
+        background-size: contain; 
+    }
+
+
+
+
+
+    .figure3 {
+        background: black url("/media/tetris creator.jpg") center no-repeat;
+        background-size: contain; 
+    }
+    .figure4 {
+        background: black url("/media/tetris arcade.jpg") center no-repeat;
+        background-size: contain; 
+    }
+    .figure5 {
+        background: black url("/media/tetris effect study.PNG") center no-repeat;
+        background-size: contain; 
+    }
+    .figure6 {
+        background: black url("/media/tetris effect.jpg") center no-repeat;
+        background-size: auto; 
+    }
+
+
+    .figure7 {
+        background: black url("/media/tetris final image.webp") center no-repeat;
+        background-size: contain; 
+    }
+
+    .section7 ul {
+        margin: 1rem 0; 
+    }
+
+    .section7 li {
+        text-align: left; 
+        list-style: none;
+        margin: 0.5rem 0; 
+
+    }
+
+    .section7 p, .section8 p {
+        text-align: right; 
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: calc(.5vmin + .9vmax);
+        margin-bottom: 5%; 
+    }
+
+    section > div {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 1rem; 
+    }
+    h1, h2 {
+        margin: 15% 0 auto;
+        font-size: calc(5vmin + 3vmax);
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center; 
+        font-weight: 700;
+        line-height: 1;
+        word-spacing: .5rem;
+    }
+    p {
+        text-align: right; 
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: calc(.5vmin + .9vmax);
+        margin-bottom: 5%; 
+        line-height: 1.8rem;
+
+    }
+    h4 {
+        text-align: right; 
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: calc(1.2vmin + .75vmax);
+        margin-bottom: 5%; 
+
+    }
+    h6 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 200;
+        font-style: italic; 
+        font-size: calc(.5vmin + .7vmax);
+    }
+    a {
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    li {
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    a:hover, a:focus {
+        color: crimson; 
+    }
+
+    svg {
+        width: 10rem;  
+        height: 15rem;  
+        z-index: 99;
+        stroke: black; 
+    }
+
+    
+.downwards-menu {
+    
+    
+    width: 100%; 
+    height: 50px; 
+    background-color: var(--bg-main); 
+
+    position: fixed;
+
+    bottom: -50px; 
+
+    transition: all 200ms linear; 
+}
+
+.downwards-menu.active {
+    bottom: 0px; 
+}
+
+
+.downwards-menu-toggle-btn {
+    position: absolute; 
+    left: 50%;  
+    top: -50px; 
+}
+.downwards-menu-toggle-btn span {
+    display: block;
+    height: 5px; 
+    background: #00B630;
+    margin: 3px 0px; 
+}
+
+.downwards-menu-toggle-btn span:hover {
+    cursor: pointer; 
+}
+
+.downwards-menu-toggle-btn-span1 {
+    width: 30px; 
+}
+
+.downwards-menu-toggle-btn-span2 {
+    width: 22.5px; 
+}
+
+.downwards-menu-toggle-btn-span3 {
+    width: 7.5px; 
+}
+
+.downwards-menu-toggle-btn-span4 {
+    width: 15px; 
+}
+
+.downwards-menu-links {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center; 
+    align-content: center; 
+}
+
+.downwards-menu-links li {
+    list-style: none; 
+    padding: 15px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; 
+}
+
+.downwards-menu-links a {
+    color: var(--main-color); 
+    text-decoration: none; 
+}
+
+
+
+}
+
+
+
+
+
+
+
+/*tetris game style here: */
+
+.section9 {
+    background-color: var(--bg-main); 
+    width: 100%;
+    height: 100vh;
+    margin: 0 0 0 auto; 
+    position: sticky; 
+    top: 0;
+    overflow: hidden;
+    padding: 3vmin;
+}
+
+.section9-score {
+    width: 100%;
+    height: 10%; 
+}
+
+.section9-score h1 {
+    margin: 10px; 
+    font-size: calc(1vmin + 2vmax);
+}
+
+.container {
+    width: 100%;
+    height: 70%; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center; 
+    margin: auto; 
+
+}
+
+.game_start {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.game_start button {
+    margin: 0 20px; 
+    font-size: 1rem; 
+}
+
+.mobile-controls {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    align-content: center; 
+    justify-content: center;
+}
+
+.mobile-controls button{
+    height: 2rem; 
+    width: 8rem; 
+    color: red;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500; 
+    margin: 5px 5px; 
+}
+
+.mobile-controls-up-right {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    align-content: center; 
+    justify-content: center;
+}
+
+.container h1 {
+    text-align: right; 
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: calc(.05vmin + .25vmax);
+    margin-bottom: 5%; 
+}
+
+.grid {
+    width: 480px; 
+    height: 960px;
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: var(--bg-main);
+    background-color: black; 
+    margin: 0 10px; 
+}
+
+.grid div {
+    height: 48px;
+    width: 48px; 
+/*     background-color: red;  */
+}
+
+
+
+.controls_help p {
+    text-align: center; 
+    font-size: calc(.5vmin + .6vmax);
+    margin: 10px 0rem; 
+}
+
+.tetromino {
+    background-color: blue; /*TEMPORARY*/
+}
+
+.mini-grid {
+    margin-top: 10px; 
+    width: 192px; 
+    height: 192px;
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: white; /*temporary*/
+}
+
+.mini-grid div {
+    height: 48px;
+    width: 48px; 
+}
+
+
+
+
+/*SMARTPHONE QUERY*/
+
+@media only screen and (max-width: 600px) {
+
+    
+.downwards-menu {
+    
+    
+    width: 100%; 
+    height: 50px; 
+    background-color: var(--bg-main); 
+
+    position: fixed;
+
+    bottom: -50px; 
+
+    transition: all 200ms linear; 
+}
+
+.downwards-menu.active {
+    bottom: 0px; 
+}
+
+
+.downwards-menu-toggle-btn {
+    position: absolute; 
+    left: 50%;  
+    top: -50px; 
+}
+.downwards-menu-toggle-btn span {
+    display: block;
+    height: 5px; 
+    background: #00B630;
+    margin: 3px 0px; 
+}
+
+.downwards-menu-toggle-btn span:hover {
+    cursor: pointer; 
+}
+
+.downwards-menu-toggle-btn-span1 {
+    width: 30px; 
+}
+
+.downwards-menu-toggle-btn-span2 {
+    width: 22.5px; 
+}
+
+.downwards-menu-toggle-btn-span3 {
+    width: 7.5px; 
+}
+
+.downwards-menu-toggle-btn-span4 {
+    width: 15px; 
+}
+
+.downwards-menu-links {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center; 
+    align-content: center; 
+}
+
+.downwards-menu-links li {
+    list-style: none; 
+    padding: 15px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400; 
+}
+
+.downwards-menu-links a {
+    color: var(--main-color); 
+    text-decoration: none; 
+}
+
+    body > article {
+        display: flex; 
+        flex-wrap: wrap; 
+    }
+    figure {
+        background: #eee; 
+        width: 100%; /*so, it displays the sections/figures one by one, if it were 50%, it would display both at the same time*/
+        height: 100vh; 
+        padding: 15px; 
+        border: solid 1px black;
+
+    }
+
+    section {
+        background: #e5e5e5; 
+        width: 100%; 
+        height: 100vh; 
+        padding: 15px; 
+        border: solid 1px black;
+
+    }
+    figure:nth-of-type(1),
+    section:nth-of-type(1) {
+        margin: 0 0 0 0;
+        width: 100%;
+    }
+    figure:nth-of-type(2n) {
+        margin: 0 0 0 auto;
+/*         box-shadow: -4px -4px 8px rgba(0,0,0,.6);  */
+    }
+    figure:last-of-type,
+    section:last-of-type {
+        margin-bottom: none;
+    }
+    .section1 h1::after {
+        content: url("./media/L_1.svg");
+        position: absolute;
+        height: 4.5rem; 
+        width: 6rem;
+        stroke: black; 
+
+        right: 15%; 
+        bottom: -25vmin;
+    }
+    .section2 h1::after {
+        content: url("./media/S.svg");
+        position: absolute;
+        height: 4.5rem; 
+        width: 6rem;
+        stroke: black; 
+
+        right: 30%; 
+        bottom: -25vmin;
+    }
+    .section3 h1::after {
+        content: url("./media/o.svg");
+        position: absolute;
+        height: 4rem;
+        width: 4rem;
+        stroke: black; 
+
+        right: 40%; 
+        bottom: -25vmin;
+    }
+    .section4 h1::after {
+        content: url("./media/I.svg");
+        position: absolute;
+        height: 4.5rem; 
+        width: 9rem;
+        stroke: black; 
+
+        right: 18%; 
+        bottom: -25vmin;
+    }
+    .section5 h1::after {
+        content: url("./media/Z.svg");
+        position: absolute;
+        height: 4.5rem; 
+        width: 6rem;
+        stroke: black; 
+
+        right: 25%; 
+        bottom: -25vmin;
+    }
+    .section6 h1::after {
+        content: url("./media/J.svg");
+        position: absolute;
+        height: 4.5rem; 
+        width: 6rem;
+        stroke: black; 
+
+        right: 25%; 
+        bottom: -25vmin;
+    }
+    .section7 h1::after {
+        content: url("./media/T.svg");
+        position: absolute;
+        height: 4.5rem; 
+        width: 6rem;
+        stroke: black; 
+
+        right: 36%; 
+        bottom: -25vmin;
+    }
+    
+
+    figcaption {
+        position: sticky; 
+        bottom: 0;
+        left: 0;  
+         
+        padding: 1rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        font-style: italic; 
+        font-size: calc(1vmin + 1.2vmax);
+        color: white; 
+        text-align: center; 
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    figcaption a {
+        color: white; 
+        font-weight: bold;
+        font-style: italic; 
+
+    }
+
+
+
+
+
+    .figure1 {
+        background: black url("./media/tetris first build.png") center no-repeat;
+        background-size: contain; 
+    }
+    .figure2 {
+        background: black url("./media/tetris nes cover.jpg") center no-repeat;
+        background-size: contain; 
+    }
+
+
+
+
+
+    .figure3 {
+        background: black url("./media/tetris creator.jpg") center no-repeat;
+        background-size: contain; 
+    }
+    .figure4 {
+        background: black url("./media/tetris arcade.jpg") center no-repeat;
+        background-size: contain; 
+    }
+    .figure5 {
+        background: black url("./media/tetris effect study.PNG") center no-repeat;
+        background-size: contain; 
+    }
+    .figure6 {
+        background: black url("./media/tetris effect.jpg") center no-repeat;
+        background-size: cover; 
+    }
+
+
+    .figure7 {
+        background: black url("./media/tetris final image.webp") center no-repeat;
+        background-size: contain; 
+    }
+
+
+
+
+
+    .section7 p, .section8 p {
+        text-align: right; 
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: calc(.7vmin + 1.1vmax);
+        margin-bottom: 5%; 
+    }
+
+    section > div {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding: 1rem; 
+    }
+    h1, h2 {
+        margin: 15% 0 auto;
+        font-size: calc(5vmin + 3vmax);
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center; 
+        font-weight: 700;
+        line-height: 1;
+        word-spacing: .5rem;
+    }
+    p {
+        text-align: right; 
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: calc(.9vmin + 1.2vmax);
+        margin-bottom: 5%; 
+        line-height: 1rem;
+
+    }
+    h4 {
+        text-align: right; 
+        width: 100%;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: calc(1vmin + 1.2vmax);
+        margin-bottom: 5%; 
+
+    }
+    h6 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 200;
+        font-style: italic; 
+        font-size: calc(.5vmin + .7vmax);
+    }
+    .section7 a {
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: calc(.7vmin + .9vmax);
+    }
+    a {
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    .section7 li {
+        color: black;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        text-decoration: none;
+        color: red; 
+        font-size: calc(.7vmin + .9vmax);
+        text-align: left; 
+        list-style: none;
+        margin: 5px 0; 
+    }
+    a:hover, a:focus {
+        color: crimson; 
+    }
+
+    svg {
+        width: 10rem;  
+        height: 15rem;  
+        z-index: 99;
+        stroke: black; 
+    }
+
+
+
+
+
+
+
+
+/*tetris game style here: */
+
+.section9 {
+    display: flex; 
+    flex-direction: column; 
+    padding: 0 10px; 
+}
+
+.section9 h1 {
+    margin: 10px; 
+    font-size: calc(2vmin + 3vmax);
+}
+
+
+.container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+    align-content: center; 
+    align-items: center; 
+    margin-bottom: -29px; 
+}
+
+.game_start {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 2px 0px 0px 0px; 
+}
+
+.game_start button {
+    margin: 2px 4px 0px 4px;  
+    background-color: black;
+    color: white; 
+}
+
+.mobile-controls {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    align-content: center; 
+    justify-content: center;
+}
+
+.mobile-controls button{
+    height: 1.9rem; 
+    width: 8.5rem; 
+    color: red; 
+    margin: 5px 5px; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.mobile-controls-up-right {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    align-content: center; 
+    justify-content: center;
+}
+
+.container h2 {
+    text-align: right; 
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: calc(.04vmin + .2vmax);
+}
+
+.grid {
+    width: 240px; 
+    height: 480px;
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: var(--bg-main);
+    background-color: black; 
+}
+
+.grid div {
+    height: 24px;
+    width: 24px; 
+/*     background-color: red;  */
+}
+
+
+
+
+
+
+
+.normal {
+    --bg-main: white; 
+
+
+}
+
+.dark {
+    --bg-main: black; 
+}
+
+.original {
+    --bg-main: #8A8520;
+
+    --darkest-color: #364B40; 
+}
+
+.mini-grid {
+    width: 80px; 
+    height: 80px;
+    display: flex; 
+    background-color: white; /*temporary*/
+/*     border: solid 1px black;  this fucks up the whole div, so NOPE*/ 
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px; 
+}
+
+
+
+
+}
