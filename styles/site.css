@@ -34,7 +34,7 @@ html {
 	color: var(--text-color); 
 }
 
-@media screen and (min-width: 601px) {
+
     body > article {
         display: flex; 
         flex-wrap: wrap; 
@@ -425,7 +425,7 @@ html {
 
 
 
-}
+
 
 
 
@@ -444,11 +444,18 @@ html {
     top: 0;
     overflow: hidden;
     padding: 3vmin;
+    display: flex; 
+    flex-direction: column;
+}
+
+.section9up {
+    display: flex; 
+    margin: auto; 
 }
 
 .section9-score {
     width: 100%;
-    height: 10%; 
+    height: 15%; 
 }
 
 .section9-score h1 {
@@ -489,12 +496,9 @@ html {
 }
 
 .mobile-controls button{
-    height: 2rem; 
-    width: 8rem; 
-    color: red;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500; 
-    margin: 5px 5px; 
+    height: 0.1rem; 
+    width: 0.1rem;
+    opacity: 0;  
 }
 
 .mobile-controls-up-right {
@@ -559,8 +563,78 @@ html {
 
 
 
+@media screen and (min-width: 1200px) {
+    .section9-score {
+        height: 10%; 
+    }
+    .section9-score h1 {
+        margin: auto;
+    }
+
+    .container {
+        height: 80%; 
+    }
+
+    .grid {
+        width: 240px; 
+        height: 480px;
+    }
+
+    .grid div {
+        height: 24px;
+        width: 24px; 
+    }
+
+    .mini-grid {
+        width: 96px; 
+        height: 96px; 
+    }
+
+    .mini-grid div {
+        width: 24px; 
+        height: 24px; 
+    }
+
+    .controls {
+        height: 10%; 
+    }
+
+}
 
 /*SMARTPHONE QUERY*/
+@media screen and (min-width: 601px) {
+    .section9-score {
+        height: 10%; 
+    }
+
+    .container {
+        height: 60%; 
+    }
+
+    .grid {
+        width: 240px; 
+        height: 480px;
+    }
+
+    .grid div {
+        height: 24px;
+        width: 24px; 
+    }
+
+    .mini-grid {
+        width: 96px; 
+        height: 96px; 
+    }
+
+    .mini-grid div {
+        width: 24px; 
+        height: 24px; 
+    }
+
+    .controls {
+        height: 35%; 
+    }
+}
 
 @media only screen and (max-width: 600px) {
 
@@ -671,7 +745,7 @@ html {
         margin-bottom: none;
     }
     .section1 h1::after {
-        content: url("./media/L_1.svg");
+        content: url("/media/L_1.svg");
         position: absolute;
         height: 4.5rem; 
         width: 6rem;
@@ -681,7 +755,7 @@ html {
         bottom: -25vmin;
     }
     .section2 h1::after {
-        content: url("./media/S.svg");
+        content: url("/media/S.svg");
         position: absolute;
         height: 4.5rem; 
         width: 6rem;
@@ -691,7 +765,7 @@ html {
         bottom: -25vmin;
     }
     .section3 h1::after {
-        content: url("./media/o.svg");
+        content: url("/media/o.svg");
         position: absolute;
         height: 4rem;
         width: 4rem;
@@ -701,7 +775,7 @@ html {
         bottom: -25vmin;
     }
     .section4 h1::after {
-        content: url("./media/I.svg");
+        content: url("/media/I.svg");
         position: absolute;
         height: 4.5rem; 
         width: 9rem;
@@ -711,7 +785,7 @@ html {
         bottom: -25vmin;
     }
     .section5 h1::after {
-        content: url("./media/Z.svg");
+        content: url("/media/Z.svg");
         position: absolute;
         height: 4.5rem; 
         width: 6rem;
@@ -721,7 +795,7 @@ html {
         bottom: -25vmin;
     }
     .section6 h1::after {
-        content: url("./media/J.svg");
+        content: url("/media/J.svg");
         position: absolute;
         height: 4.5rem; 
         width: 6rem;
@@ -731,7 +805,7 @@ html {
         bottom: -25vmin;
     }
     .section7 h1::after {
-        content: url("./media/T.svg");
+        content: url("/media/T.svg");
         position: absolute;
         height: 4.5rem; 
         width: 6rem;
@@ -769,11 +843,11 @@ html {
 
 
     .figure1 {
-        background: black url("./media/tetris first build.png") center no-repeat;
+        background: black url("/media/tetris first build.png") center no-repeat;
         background-size: contain; 
     }
     .figure2 {
-        background: black url("./media/tetris nes cover.jpg") center no-repeat;
+        background: black url("/media/tetris nes cover.jpg") center no-repeat;
         background-size: contain; 
     }
 
@@ -782,25 +856,25 @@ html {
 
 
     .figure3 {
-        background: black url("./media/tetris creator.jpg") center no-repeat;
+        background: black url("/media/tetris creator.jpg") center no-repeat;
         background-size: contain; 
     }
     .figure4 {
-        background: black url("./media/tetris arcade.jpg") center no-repeat;
+        background: black url("/media/tetris arcade.jpg") center no-repeat;
         background-size: contain; 
     }
     .figure5 {
-        background: black url("./media/tetris effect study.PNG") center no-repeat;
+        background: black url("/media/tetris effect study.PNG") center no-repeat;
         background-size: contain; 
     }
     .figure6 {
-        background: black url("./media/tetris effect.jpg") center no-repeat;
+        background: black url("/media/tetris effect.jpg") center no-repeat;
         background-size: cover; 
     }
 
 
     .figure7 {
-        background: black url("./media/tetris final image.webp") center no-repeat;
+        background: black url("/media/tetris final image.webp") center no-repeat;
         background-size: contain; 
     }
 
@@ -922,7 +996,6 @@ html {
     justify-content: space-around;
     align-content: center; 
     align-items: center; 
-    margin-bottom: -29px; 
 }
 
 .game_start {
@@ -949,12 +1022,13 @@ html {
 }
 
 .mobile-controls button{
-    height: 1.9rem; 
-    width: 8.5rem; 
+    height: 1rem; 
+    width: 6rem; 
     color: red; 
     margin: 5px 5px; 
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
+    opacity: 1; 
 }
 
 .mobile-controls-up-right {
@@ -1025,6 +1099,3 @@ html {
 }
 
 
-
-
-}
