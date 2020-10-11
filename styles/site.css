@@ -528,6 +528,11 @@ html {
         font-size: calc(1vmin + 1.7vmax);
     }
 
+    h5 {
+        font-weight: 500; 
+        text-align: center;
+    }
+
     li {
         font-size: calc(.9vmin + 1.2vmax);
         margin: 5px; 
