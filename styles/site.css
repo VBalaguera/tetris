@@ -61,6 +61,8 @@ html {
         padding: 3vmin;
     }
 
+
+
     figure:nth-of-type(1),
     section:nth-of-type(1) {
         margin: 0 0 0 0;
@@ -74,77 +76,35 @@ html {
     section:last-of-type {
         margin-bottom: none;
     }
-
-    .section1 h1::after {
-        content: url("/media/L_1.svg");
-        position: absolute;
-        height: 4.5rem; 
-        width: 6rem;
-        fill: black; 
-
-        right: 39%; 
-        bottom: -7vmin;
+    .section1 img {
+        height: 50%; 
+        width: 50%; 
     }
-    .section2 h1::after {
-        content: url("/media/S.svg");
-        position: absolute;
-        height: 4.5rem; 
-        width: 6rem;
-        stroke: black; 
-
-        right: 39%; 
-        bottom: -7vmin;
+    .section2 img {
+        height: 40%; 
+        width: 40%; 
     }
-    .section3 h1::after {
-        content: url("/media/o.svg");
-        position: absolute;
-        height: 4rem;
-        width: 4rem;
-        stroke: black; 
-
-        right: 40%; 
-        bottom: -5vmin;
+    .section3 img {
+        height: 28%; 
+        width: 28%; 
     }
-    .section4 h1::after {
-        content: url("/media/I.svg");
-        position: absolute;
-        height: 4.5rem; 
-        width: 9rem;
-        stroke: black; 
-
-        right: 32%; 
-        bottom: -4vmin;
+    .section4 img {
+        height: 40%; 
+        width: 40%; 
     }
-    .section5 h1::after {
-        content: url("/media/Z.svg");
-        position: absolute;
-        height: 4.5rem; 
-        width: 6rem;
-        stroke: black; 
-
-        right: 39%; 
-        bottom: -7vmin;
+    .section5 img {
+        height: 40%; 
+        width: 40%; 
     }
-    .section6 h1::after {
-        content: url("/media/J.svg");
-        position: absolute;
-        height: 4.5rem; 
-        width: 6rem;
-        stroke: black; 
-
-        right: 39%; 
-        bottom: -7vmin;
+    .section6 img {
+        height: 40%; 
+        width: 40%; 
     }
-    .section7 h1::after {
-        content: url("/media/T.svg");
-        position: absolute;
-        height: 4.5rem; 
-        width: 6rem;
-        stroke: black; 
-
-        right: 39%; 
-        bottom: -7vmin;
+    .section7 img {
+        height: 30%; 
+        width: 30%; 
     }
+
     
 
     figcaption {
@@ -228,7 +188,7 @@ html {
     }
     h1, h2 {
         margin: 15% 0 auto;
-        font-size: calc(5vmin + 3vmax);
+        font-size: calc(2vmin + 3vmax);
         font-family: 'Josefin Sans', sans-serif;
         text-align: center; 
         font-weight: 700;
@@ -267,12 +227,16 @@ html {
         font-weight: 400;
         text-decoration: none;
     }
+    ul {
+        list-style: none;
+    }
     li {
         color: black;
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
         text-decoration: none;
         font-size: calc(.5vmin + .9vmax);
+        margin: 1rem 0; 
     }
     a:hover, a:focus {
         color: crimson; 
@@ -283,17 +247,6 @@ html {
         height: 15rem;  
         z-index: 99;
         stroke: black; 
-    }
-
-    .section7 ul {
-        margin: 1rem 0; 
-    }
-
-    .section7 li {
-        text-align: left; 
-        list-style: none;
-        margin: 0.5rem 0; 
-
     }
 
     .section7 p, .section8 p {
@@ -319,6 +272,9 @@ html {
     bottom: -50px; 
 
     transition: all 200ms linear; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
 }
 
 .downwards-menu.active {
@@ -560,16 +516,21 @@ html {
     }
 
     figcaption {
-        font-size: calc(0.9vmin + 1vmax);
+        font-size: calc(0.9vmin + 1.3vmax);
     }
 
     p {
-        font-size: calc(.8vmin + 1vmax);
+        font-size: calc(1vmin + 1.3vmax);
         line-height: 1.2rem;
     }
 
     h4 {
-        font-size: calc(1vmin + 1.5vmax);
+        font-size: calc(1vmin + 1.7vmax);
+    }
+
+    li {
+        font-size: calc(.9vmin + 1.2vmax);
+        margin: 5px; 
     }
 
 
