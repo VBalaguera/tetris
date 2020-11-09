@@ -187,7 +187,7 @@ html {
         padding: 1rem; 
     }
     h1, h2 {
-        margin: 15% 0 auto;
+        margin: 5% 0 auto;
         font-size: calc(2vmin + 3vmax);
         font-family: 'Josefin Sans', sans-serif;
         text-align: center; 
@@ -235,7 +235,7 @@ html {
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
         text-decoration: none;
-        font-size: calc(.5vmin + .9vmax);
+        font-size: calc(.4vmin + .7vmax);
         margin: 1rem 0; 
     }
     a:hover, a:focus {
