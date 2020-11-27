@@ -184,7 +184,6 @@ html {
         flex-direction: column;
         align-items: center;
         height: 100%;
-        padding: 1rem; 
     }
     section h1, section h2 {
         margin: 5% 0 auto;
@@ -253,9 +252,24 @@ html {
         margin-bottom: 5%; 
     }
 
-    .sources-resources, .credits {
+    .sources-resources {
         margin: 2rem 0; 
     }
+
+    .section3, .section8 {
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .credits {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; 
+    }
+
+
+
 
 
     
@@ -360,10 +374,11 @@ html {
     flex-direction: row; 
     align-items: center;
     justify-content: center; 
-    
+    margin: 1rem 0 0 0; 
 }
 
 .game_start {
+    height: 7rem; 
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap; 
@@ -371,8 +386,18 @@ html {
     justify-content: center;
 }
 
+.game-start button {
+    
+}
+.section9-score-difficulty {
+    height: 3rem; 
+}
+
 .game_start button {
+    height: 1.5rem; 
+    width: 7rem;
     margin: 0 10px; 
+    color: red; 
 }
 
 .mobile-controls {
@@ -381,6 +406,7 @@ html {
     align-items: center; 
     align-content: center; 
     justify-content: center;
+    padding: 0; 
 }
 
 .mobile-controls button{
@@ -426,11 +452,7 @@ html {
 /*     background-color: red;  */
 }
 
-.controls_help p {
-    text-align: center; 
-    font-size: calc(.5vmin + .6vmax);
-    margin: 10px 0rem; 
-}
+
 
 .tetromino {
     background-color: blue; /*TEMPORARY*/
