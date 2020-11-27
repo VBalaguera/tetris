@@ -186,9 +186,9 @@ html {
         height: 100%;
         padding: 1rem; 
     }
-    h1, h2 {
+    section h1, section h2 {
         margin: 5% 0 auto;
-        font-size: calc(2vmin + 3vmax);
+        font-size: 3rem; 
         font-family: 'Josefin Sans', sans-serif;
         text-align: center; 
         font-weight: 700;
@@ -200,7 +200,7 @@ html {
         width: 100%;
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
-        font-size: calc(.5vmin + .9vmax);
+        font-size: 1.5rem; 
         margin-bottom: 5%; 
         line-height: 1.8rem;
 
@@ -211,15 +211,9 @@ html {
         font-family: 'Raleway', sans-serif;
         font-weight: 500;
         font-style: italic;
-        font-size: calc(1.2vmin + .75vmax);
+        font-size: 1.5rem; 
         margin-bottom: 5%; 
 
-    }
-    h6 {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 200;
-        font-style: italic; 
-        font-size: calc(.5vmin + .7vmax);
     }
     a {
         color: black;
@@ -235,8 +229,8 @@ html {
         font-family: 'Raleway', sans-serif;
         font-weight: 400;
         text-decoration: none;
-        font-size: calc(.4vmin + .7vmax);
-        margin: 1rem 0; 
+        font-size: 1rem;
+        margin: .5rem 0; 
     }
     a:hover, a:focus {
         color: crimson; 
@@ -258,6 +252,11 @@ html {
         font-size: calc(.5vmin + .9vmax);
         margin-bottom: 5%; 
     }
+
+    .sources-resources, .credits {
+        margin: 2rem 0; 
+    }
+
 
     
 .downwards-menu {
