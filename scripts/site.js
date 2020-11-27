@@ -367,7 +367,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    //ADDED LATER: PAUSE FUNCTION: 
+    // hiding custom cursor on mobile 
+    if (window.navigator.userAgent.indexOf("Mobile") > -1) { 
+      // HIDING ELEMENTS 
+      $(".controls_help").hide(); 
+    } 
 
 
 
