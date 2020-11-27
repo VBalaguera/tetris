@@ -371,7 +371,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.navigator.userAgent.indexOf("Mobile") > -1) { 
       // HIDING ELEMENTS 
       $(".controls_help").hide(); 
-    } 
+    } else {
+      return; 
+    }
 
 
 
