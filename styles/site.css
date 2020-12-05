@@ -621,7 +621,7 @@ svg {
     .downwards-menu-toggle-btn.active {
         position: absolute; 
         left: calc(50% - 15px); 
-        top: 120px; 
+        top: 57%; 
         z-index: 999; 
     }
 
