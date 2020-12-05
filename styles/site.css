@@ -620,7 +620,7 @@ svg {
 
     .downwards-menu-toggle-btn.active {
         position: absolute; 
-        left: 50%;  
+        left: calc(50% - 15px); 
         top: 120px; 
         z-index: 999; 
     }
