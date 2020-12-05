@@ -296,9 +296,14 @@ svg {
 
 
 .downwards-menu-toggle-btn {
+
     position: absolute; 
-    left: 50%;  
+    left: calc(50% - 15px);  
+
+
     top: -50px; 
+    margin: 0;
+    padding: 0; 
 }
 .downwards-menu-toggle-btn span {
     display: block;
