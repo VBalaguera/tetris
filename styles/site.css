@@ -35,238 +35,238 @@ html {
 }
 
 
-    body > article {
-        display: flex; 
-        flex-wrap: wrap; 
-    }
+body > article {
+    display: flex; 
+    flex-wrap: wrap; 
+}
 
-    figure {
-        background-color: var(--text-color); 
-        width: calc( 50% + 1px); 
-        height: 100vh; 
-        margin: 0 auto 10vh 0; 
-        position: sticky;
-        top: 0;
-        overflow: hidden; 
-    }
+figure {
+    background-color: var(--text-color); 
+    width: calc( 50% + 1px); 
+    height: 100vh; 
+    margin: 0 auto 10vh 0; 
+    position: sticky;
+    top: 0;
+    overflow: hidden; 
+}
 
-    section {
-        background-color: var(--bg-main); 
-        width: calc(50% + 1px);
-        height: 100vh;
-        margin: 0 0 0 auto; 
-        position: sticky; 
-        top: 0;
-        overflow: hidden;
-        padding: 3vmin;
-    }
+section {
+    background-color: var(--bg-main); 
+    width: calc(50% + 1px);
+    height: 100vh;
+    margin: 0 0 0 auto; 
+    position: sticky; 
+    top: 0;
+    overflow: hidden;
+    padding: 3vmin;
+}
 
 
 
-    figure:nth-of-type(1),
-    section:nth-of-type(1) {
-        margin: 0 0 0 0;
-        width: 50%;
-    }
-    figure:nth-of-type(2n) {
-        margin: 0 0 0 auto;
+figure:nth-of-type(1),
+section:nth-of-type(1) {
+    margin: 0 0 0 0;
+    width: 50%;
+}
+figure:nth-of-type(2n) {
+    margin: 0 0 0 auto;
 
-    }
-    figure:last-of-type,
-    section:last-of-type {
-        margin-bottom: none;
-    }
-    .section1 img {
-        height: 50%; 
-        width: 50%; 
-    }
-    .section2 img {
-        height: 40%; 
-        width: 40%; 
-    }
-    .section3 img {
-        height: 28%; 
-        width: 28%; 
-    }
-    .section4 img {
-        height: 40%; 
-        width: 40%; 
-    }
-    .section5 img {
-        height: 40%; 
-        width: 40%; 
-    }
-    .section6 img {
-        height: 40%; 
-        width: 40%; 
-    }
-    .section7 img {
-        height: 30%; 
-        width: 30%; 
-    }
+}
+figure:last-of-type,
+section:last-of-type {
+    margin-bottom: none;
+}
+.section1 img {
+    height: 50%; 
+    width: 50%; 
+}
+.section2 img {
+    height: 40%; 
+    width: 40%; 
+}
+.section3 img {
+    height: 28%; 
+    width: 28%; 
+}
+.section4 img {
+    height: 40%; 
+    width: 40%; 
+}
+.section5 img {
+    height: 40%; 
+    width: 40%; 
+}
+.section6 img {
+    height: 40%; 
+    width: 40%; 
+}
+.section7 img {
+    height: 30%; 
+    width: 30%; 
+}
 
-    
 
-    figcaption {
-        position: sticky; 
-        bottom: 0;
-        left: 0;  
-         
-        padding: 1rem;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bold;
-        font-style: italic; 
-        font-size: calc(.5vmin + .7vmax);
-        color: white; 
-        text-align: center; 
-        background: rgba(0, 0, 0, 0.4);
-    }
 
-        figcaption a {
-        color: white; 
-        font-weight: bold;
-        font-style: italic; 
+figcaption {
+    position: sticky; 
+    bottom: 0;
+    left: 0;  
+        
+    padding: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-style: italic; 
+    font-size: calc(.5vmin + .7vmax);
+    color: white; 
+    text-align: center; 
+    background: rgba(0, 0, 0, 0.4);
+}
 
-    }
+    figcaption a {
+    color: white; 
+    font-weight: bold;
+    font-style: italic; 
+
+}
 
 
 /* 	section:nth-of-type(2n):after {
-		right: 5vmin;
-		left: 45%;
-    } */
-    figure img {
-        min-width: 100%;
-        min-height: 100%;
-        object-fit: contain; 
-        object-position: center;
-    }
+    right: 5vmin;
+    left: 45%;
+} */
+figure img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain; 
+    object-position: center;
+}
 
-    .figure1 {
-        background: black url("/media/tetris first build.png") center no-repeat;
-        background-size: contain; 
-    }
-    .figure2 {
-        background: black url("/media/tetris nes cover.jpg") center no-repeat;
-        background-size: contain; 
-    }
-
-
+.figure1 {
+    background: black url("/media/tetris first build.png") center no-repeat;
+    background-size: contain; 
+}
+.figure2 {
+    background: black url("/media/tetris nes cover.jpg") center no-repeat;
+    background-size: contain; 
+}
 
 
 
-    .figure3 {
-        background: black url("/media/tetris creator.jpg") center no-repeat;
-        background-size: contain; 
-    }
-    .figure4 {
-        background: black url("/media/tetris arcade.jpg") center no-repeat;
-        background-size: contain; 
-    }
-    .figure5 {
-        background: black url("/media/tetris effect study.PNG") center no-repeat;
-        background-size: contain; 
-    }
-    .figure6 {
-        background: black url("/media/tetris effect.jpg") center no-repeat;
-        background-size: auto; 
-    }
 
 
-    .figure7 {
-        background: black url("/media/tetris final image.webp") center no-repeat;
-        background-size: contain; 
-    }
+.figure3 {
+    background: black url("/media/tetris creator.jpg") center no-repeat;
+    background-size: contain; 
+}
+.figure4 {
+    background: black url("/media/tetris arcade.jpg") center no-repeat;
+    background-size: contain; 
+}
+.figure5 {
+    background: black url("/media/tetris effect study.PNG") center no-repeat;
+    background-size: contain; 
+}
+.figure6 {
+    background: black url("/media/tetris effect.jpg") center no-repeat;
+    background-size: auto; 
+}
+
+
+.figure7 {
+    background: black url("/media/tetris final image.webp") center no-repeat;
+    background-size: contain; 
+}
 
 
 
-    section > div {
-        display: flex; 
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-    }
-    section h1, section h2 {
-        margin: 5% 0 auto;
-        font-size: 3rem; 
-        font-family: 'Josefin Sans', sans-serif;
-        text-align: center; 
-        font-weight: 700;
-        line-height: 1;
-        word-spacing: .5rem;
-    }
-    p {
-        text-align: right; 
-        width: 100%;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        font-size: 1.5rem; 
-        margin-bottom: 5%; 
-        line-height: 1.8rem;
+section > div {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+section h1, section h2 {
+    margin: 5% 0 auto;
+    font-size: 3rem; 
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center; 
+    font-weight: 700;
+    line-height: 1;
+    word-spacing: .5rem;
+}
+p {
+    text-align: right; 
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem; 
+    margin-bottom: 5%; 
+    line-height: 1.8rem;
 
-    }
-    h4 {
-        text-align: right; 
-        width: 100%;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
-        font-style: italic;
-        font-size: 1.5rem; 
-        margin-bottom: 5%; 
+}
+h4 {
+    text-align: right; 
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 1.5rem; 
+    margin-bottom: 5%; 
 
-    }
-    a {
-        color: black;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        text-decoration: none;
-    }
-    ul {
-        list-style: none;
-    }
-    li {
-        color: black;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        text-decoration: none;
-        font-size: 1rem;
-        margin: .5rem 0; 
-    }
-    a:hover, a:focus {
-        color: crimson; 
-    }
+}
+a {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+li {
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 1rem;
+    margin: .5rem 0; 
+}
+a:hover, a:focus {
+    color: crimson; 
+}
 
-    svg {
-        width: 10rem;  
-        height: 15rem;  
-        z-index: 99;
-        stroke: black; 
-    }
+svg {
+    width: 10rem;  
+    height: 15rem;  
+    z-index: 99;
+    stroke: black; 
+}
 
-    .section7 p, .section8 p {
-        text-align: right; 
-        width: 100%;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 400;
-        font-style: italic;
-        font-size: calc(.5vmin + .9vmax);
-        margin-bottom: 5%; 
-    }
+.section7 p, .section8 p {
+    text-align: right; 
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: calc(.5vmin + .9vmax);
+    margin-bottom: 5%; 
+}
 
-    .sources-resources {
-        margin: 2rem 0; 
-    }
+.sources-resources {
+    margin: 2rem 0; 
+}
 
-    .section3, .section8 {
-        display: flex; 
-        flex-direction: column;
-        justify-content: flex-end;
-    }
+.section3, .section8 {
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
-    .credits {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end; 
-    }
+.credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
 
 
 
@@ -307,24 +307,28 @@ html {
     margin: 3px 0px; 
 }
 
-.downwards-menu-toggle-btn span:hover {
+.downwards-menu-toggle-btn:hover {
     cursor: pointer; 
 }
 
 .downwards-menu-toggle-btn-span1 {
     width: 30px; 
+    transition: all .3s ease; 
 }
 
 .downwards-menu-toggle-btn-span2 {
     width: 22.5px; 
+    transition: all .3s ease; 
 }
 
 .downwards-menu-toggle-btn-span3 {
     width: 7.5px; 
+    transition: all .3s ease; 
 }
 
 .downwards-menu-toggle-btn-span4 {
     width: 15px; 
+    transition: all .3s ease; 
 }
 
 .downwards-menu-links {
@@ -334,6 +338,7 @@ html {
     align-items: center; 
     align-content: center; 
 }
+
 
 .downwards-menu-links li {
     list-style: none; 
@@ -593,7 +598,72 @@ html {
         width: 18px; 
     }
 
+    .controls_help {
+        display: none; 
+    }
+
+
+}
+
+/*responsive nav here*/
+@media screen and (max-width: 800px) {
+
+    .downwards-menu.active {
+        height: 110vh; 
+        z-index: 99; 
+    }
+
+    .downwards-menu-toggle-btn.active {
+        position: absolute; 
+        left: 50%;  
+        top: 120px; 
+        z-index: 999; 
+    }
+
+    .downwards-menu-links {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-around;
+        align-items: center; 
+        align-content: center; 
+    }
+
+    .downwards-menu-links li {
+        padding: 0; 
+    }
+
+
+}
+
+/**/
 
 
 
+@keyframes downwards-menu-links-fade {
+	from {
+		opacity: 0; 
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1; 
+		transform: translateX(0px); 
+	}
+}
+
+/*reshaping the "burger"*/
+.toggle .downwards-menu-toggle-btn-span1 {
+    transform: rotate(45deg) translate(5.5px, 6px);
+    transition: all .3s ease; 
+}
+.toggle .downwards-menu-toggle-btn-span2 {
+    transform: rotate(-45deg) translate(-1px, 3px);
+    transition: all .3s ease; 
+}
+.toggle .downwards-menu-toggle-btn-span3 {
+    transform: rotate(-45deg) translate(24.5px, 2.5px);
+    transition: all .3s ease; 
+}
+.toggle .downwards-menu-toggle-btn-span4 {
+    transform: rotate(-45.5deg) translate(19px, -5.5px);
+    transition: all .3s ease; 
 }

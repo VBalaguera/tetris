@@ -367,13 +367,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    // hiding custom cursor on mobile 
-    if (window.navigator.userAgent.indexOf("Mobile") > -1) { 
-      // HIDING ELEMENTS 
-      $(".controls_help").hide(); 
-    } else {
-      return; 
-    }
+
 
 
 
@@ -381,9 +375,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   })
 
-   //this is the Downwards-menu script
-  function toggleDownwardsMenu() {
-    document.getElementById('downwards-menu').classList.toggle('active'); 
-  }
+
 
   
