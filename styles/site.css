@@ -621,7 +621,7 @@ svg {
     .downwards-menu-toggle-btn.active {
         position: absolute; 
         left: calc(50% - 15px); 
-        top: 65%; 
+        top: 61.5%; 
         z-index: 999; 
     }
 
@@ -631,10 +631,13 @@ svg {
         justify-content: space-around;
         align-items: center; 
         align-content: center; 
+
+        margin-top: 4rem; 
     }
 
     .downwards-menu-links li {
-        padding: 1rem 0; 
+        margin: .5rem; 
+        padding: 0; 
     }
 
 
